@@ -1,0 +1,32 @@
+{
+  "name": "marine-serve",
+  "version": "0.0.1",
+  "description": "MarineJS Server",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "mocha ts-node/register Tests/*.test.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarineJS/marine-serve.git"
+  },
+  "keywords": [
+    "server",
+    "node",
+    "app"
+  ],
+  "author": "Alen Yohannan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MarineJS/marine-serve/issues"
+  },
+  "homepage": "https://github.com/MarineJS/marine-serve#readme",
+  "devDependencies": {
+    "@types/node": "^16.7.8",
+    "@typescript-eslint/eslint-plugin": "^4.30.0",
+    "@typescript-eslint/parser": "^4.30.0",
+    "eslint": "^7.32.0",
+    "prettier": "^2.3.2",
+    "typescript": "^4.4.2"
+  }
+}
