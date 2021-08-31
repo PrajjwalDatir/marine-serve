@@ -3,8 +3,17 @@
   "version": "0.0.1",
   "description": "MarineJS Server",
   "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "types": "dist",
   "scripts": {
-    "test": "mocha ts-node/register Tests/*.test.ts"
+    "build": "tsc",
+    "doc": "typedoc",
+    "lint": "eslint \"src/**/*.ts\"",
+    "prepare": "npm run build",
+    "fmt": "prettier --config .prettierrc \"src/**/*.ts\" --write",
+    "test": "mocha -r ts-node/register src/Tests/tag.test.ts"
   },
   "repository": {
     "type": "git",
@@ -26,7 +35,9 @@
     "@typescript-eslint/eslint-plugin": "^4.30.0",
     "@typescript-eslint/parser": "^4.30.0",
     "eslint": "^7.32.0",
+    "mocha": "^9.1.1",
     "prettier": "^2.3.2",
+    "ts-node": "^10.2.1",
     "typescript": "^4.4.2"
   }
 }
